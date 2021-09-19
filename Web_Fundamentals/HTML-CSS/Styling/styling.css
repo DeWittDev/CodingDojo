@@ -1,0 +1,24 @@
+* {
+    font-family:cursive;
+}
+h1 {
+    background-color: black;
+    color: white;
+}
+span {
+    color: cyan;
+}
+h2 {
+    background-color: rebeccapurple;
+    color: snow;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+h3 {
+    text-decoration: underline;
+    text-align: right;
+    font-weight: lighter;
+    background-color: #88bee0cb;
+}

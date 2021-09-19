@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustDesert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h1>Just<span>Dessert</span></h1>
+            <div class="button">
+                <button id="join" onclick="hide(this)">Join</button>
+                <button id="login">Login</button>
+            </div>
+        </nav>
+        <div class="navbody">
+            <div class="search">
+                <input type="text" class="search" placeholder="Search" oninput="searching()">
+                <button onclick="searched()">GO</button>
+            </div>
+            <div class="icon">
+                <img src="img/cake.png" alt="cake">
+                <label>Cake</label>
+            </div>
+            <div class="icon">
+                <img src="img/ice-cream.png" alt="ice cream">
+                <label>Ice Cream</label>
+            </div>
+            <div class="icon">
+                <img src="img/cookie.png" alt="cookie">
+                <label>Cookie</label>
+            </div>
+            <div class="icon">
+                <img src="img/pie.png" alt="pie">
+                <label>Pie</label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Left Column -->
+        <div class="column1">
+            <h2>Recipe of the Day</h2>
+            <img src="img/orange-tart.jpg" alt="Orange Tart">
+            <div class="description">
+                <h3>Orange Tea Jelly Tart <br>
+                by <a href="">yuripiano</a></h3>
+                <div class="hearts">
+                    <img src="img/heart.png" alt="heart" onclick="count1()">
+                    <a id="Tart">68</a>
+                </div>
+            </div>
+            <a href="">See Full Recipe</a>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column2">
+            <img src="img/macarons.jpg" alt="Macrons">
+            <div class="description">
+                <h3>Macrons <br>
+                by <a href="">EmilieW</a></h3>
+                <div class="hearts">
+                    <img src="img/heart.png" alt="heart" onclick="count2()">
+                    <a id="Macrons">212</a>
+                </div>
+            </div>
+            <img src="img/creme-brulee.jpg" alt="Creme Brulee">
+            <div class="description">
+                <h3>Creme brulee <br>
+                by <a href="">MarisaG</a></h3>
+                <div class="hearts">
+                    <img src="img/heart.png" alt="heart" onclick="count3()">
+                    <a id="Creme">32</a>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

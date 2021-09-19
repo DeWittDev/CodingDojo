@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+}
+
+.probox {
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 450px;
+    margin: 100px;
+}
+
+.probar  {
+    height: 70px;
+    background-color: #00acac;
+}
+
+.probody{
+    padding: 40px 20px 20px 20px;
+    border: 4px solid #b6b6b6;
+}
+
+#propic img {
+    top: 30px;
+    left: 30px;
+    width: 75px;
+    border: 4px solid #a1a1a1;
+    border-radius: 60%;
+    position: absolute;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon img {
+    height: 17px;
+    margin-right: 10px;
+    border-radius: 0%;
+    display: flex;
+    align-self: center;
+}
+
+.icon label {
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+}

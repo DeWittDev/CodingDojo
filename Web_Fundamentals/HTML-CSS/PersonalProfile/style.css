@@ -1,0 +1,225 @@
+/* Navbar */
+.nav {
+    background-color: #2c2c2c;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.navli {
+    color: whitesmoke;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.navli a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0px 20px;
+}
+
+.navli input {
+    height: 25px;
+    margin-left: 300px;
+    font-family: cursive;
+    color:whitesmoke;
+    background-color: #00acac;
+}
+
+/* Page Content starts */
+.body {
+    display: flex;
+    justify-content: center;
+    margin: 40px
+}
+
+/* Profile Column starts */
+.procol {
+    width: 500px;
+    margin-right: 30px;
+}
+
+/* Profile Card */
+.probar  {
+    height: 70px;
+    background-color: #00acac;
+}
+
+.probox {
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.probody{
+    padding: 40px 20px 20px 20px;
+    border: 4px solid #b6b6b6;
+}
+
+#propic img {
+    top: 30px;
+    left: 30px;
+    width: 75px;
+    border: 4px solid #a1a1a1;
+    border-radius: 60%;
+    position: absolute;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon img {
+    height: 17px;
+    margin-right: 10px;
+    border-radius: 0%;
+    display: flex;
+    align-self: center;
+}
+
+.icon label {
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+}
+
+/* Education Card */
+.edbox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edbar {
+    background-color: black;
+    padding-left: 20px;
+    max-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.edbar h5 {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.ed {
+    padding-left: 20px;
+    border: 4px solid #b6b6b6;
+}
+
+/* Connections Column starts */
+.connect {
+    width: 300px;
+    margin-left: 10px;
+}
+ /* Request Box */
+.reqbanner {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    max-height: 50px;
+}
+
+.reqbanner h5 {
+    margin-left: 10px;
+}
+
+.reqbox {
+    border: 4px solid #b6b6b6;
+}
+
+.reqnum {
+    background-color: whitesmoke;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reqimg {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.reqimg label {
+    display: flex;
+    align-self: center;
+    font-size: 20px;
+    width: 70px;
+}
+
+.reqimg img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.reqimg button {
+    border: 0px solid;
+    border-radius: 50%;
+}
+
+/* Connections box */
+.connected {
+    margin-top: 20px;
+}
+
+.conbar {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    max-height: 50px;
+}
+
+.conbox {
+    border: 4px solid #b6b6b6;
+}
+
+.connum {
+    background-color: whitesmoke;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conimg {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.conimg label {
+    margin: 10px;
+    font-size: 20px;
+    width: 90px;
+}
+
+.conimg img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.conview {
+    border-top: 4px solid #b6b6b6;
+    padding: 10px;  
+}
+
+.conview a {
+    font-size: 20px;
+}

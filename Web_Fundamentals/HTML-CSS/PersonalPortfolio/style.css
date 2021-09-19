@@ -1,0 +1,23 @@
+h1 {
+    margin-left: 30px;
+    font-family: cursive;
+}
+
+img {
+    max-width: 250px;
+    margin: 20px;
+}
+
+.head {
+    width: 550px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.msg {
+    height:40px;
+    width: 120px;
+}

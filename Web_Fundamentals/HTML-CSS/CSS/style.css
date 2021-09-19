@@ -1,0 +1,31 @@
+body {
+    outline: 2px solid saddlebrown;
+}
+
+h1 {
+    color: rgb(102, 0, 20);
+    background-color: teal;
+    font-size: 50px;
+}
+
+.centeri {
+    text-align: center;
+    font-style: italic;
+}
+
+input {
+    padding: 5px;
+    border-color: rebeccapurple;
+}
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid rebeccapurple;
+}
+input[type="submit"] {
+    color: white;
+    background-color: rebeccapurple;
+}
+.quote p {
+    color: darkslategrey;
+    font-style: italic;
+}

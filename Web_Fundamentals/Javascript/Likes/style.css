@@ -1,0 +1,79 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    padding: 5px 0px 5px 15px;
+    color: whitesmoke;
+    background-color: black;
+    width: 690px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.leftcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 30px 0px;
+}
+
+.leftcolumn img {
+    width: 90px;
+    height: 90px;
+}
+
+.rightcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 400px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px 00px 20px 40px;
+}
+
+.cardheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.likes {
+    display: flex;
+}
+
+.likes p {
+    display: flex;
+    font-weight: bold;
+    margin-left: 27%;
+}
+
+.likes button {
+    margin-left: 5%;
+    width: 100px;
+    height: 25px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 1px 0px black;
+    background-color: #f3f300;
+    font-weight: bold;
+}
