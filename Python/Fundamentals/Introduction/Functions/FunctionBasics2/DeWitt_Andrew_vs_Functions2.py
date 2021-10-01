@@ -20,7 +20,7 @@ def PrintReturn(a):
 print(PrintReturn(x))
 
 
-# #3 First Plus Length
+#3 First Plus Length
 y = [2,9,6,23,7,2,4,14,74]
 def FirstPlusLength(a):
     return (len(a) + a[0])
@@ -30,8 +30,19 @@ print(FirstPlusLength(y))
 
 #4 Values Greater than Second
 def GreaterValue(a):
-    x = []
-    for i in a:
-        if len(a) < 
-        elif a[i] > a[1]:
-            x.append(a[i])
+    b = []
+    for i in range(0,len(a)):
+        if a[i] > a[1]:
+            b.append(a[i])
+    print(len(b))
+    return b
+print(GreaterValue(y))
+
+
+#5 This Length,That Value
+def valueList(length,value):
+    b =[]
+    for i in range(length):
+        b.append(value)
+    return b
+print(valueList(7,3))
