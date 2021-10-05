@@ -15,6 +15,7 @@ class User:
 
     def displayBalance(self):
         print(self.name, 'Balance: $' + str(self.accountBalance))
+        return self
 
     def fundTransfer(self, transferee, amount):
         self.accountBalance -= amount
@@ -27,23 +28,11 @@ monty = User('Monty Python', 'monty@python.org')
 phoenix = User('Andrew DeWitt', 'DeWitt@protonmail.ch')
 
 
-guido.deposit(1352)
-guido.deposit(436)
-guido.deposit(777)
-guido.withdrawal(647)
-guido.displayBalance()
+guido.deposit(1352).deposit(436).deposit(777).withdrawal(647).displayBalance()
 
-monty.deposit(348)
-monty.deposit(24005)
-monty.withdrawal(3349)
-monty.withdrawal(20000)
-monty.displayBalance()
+monty.deposit(348).deposit(24005).withdrawal(3349).withdrawal(20000).displayBalance()
 
-phoenix.deposit(3984)
-phoenix.withdrawal(124)
-phoenix.withdrawal(248)
-phoenix.withdrawal(496)
-phoenix.displayBalance()
+phoenix.deposit(3984).withdrawal(124).withdrawal(248).withdrawal(496).displayBalance()
 
 print()
 guido.fundTransfer(phoenix, 300)
