@@ -3,38 +3,54 @@ class User:
     def __init__(self, name, email):
         self.name = name
         self.email = email
-        self.accountBalance = 0
+        self.account = BankAccount(intRate=0.015, balance=0)
 
-    def deposit(self, amount):
-        self.accountBalance += amount
+    def makeDeposit(self, amount):
+        self.account.deposit(amount)
         return self
 
-    def withdrawal(self, amount):
-        self.accountBalance -= amount
+    def makeWithdrawal(self, amount):
+        self.account.withdraw(amount)
         return self
 
     def displayBalance(self):
-        print(self.name, 'Balance: $' + str(self.accountBalance))
+        print(self.name, 'has a balance of $' + str(self.account.balance))
         return self
 
     def fundTransfer(self, transferee, amount):
-        self.accountBalance -= amount
-        transferee.accountBalance += amount
-        print(self.name, 'Balance: $' + str(self.accountBalance))
-        print(transferee.name, 'Balance: $' + str(transferee.accountBalance))
+        self.account.withdrawal(amount)
+        transferee.account.deposit(amount)
+        print(self.name, 'Balance: $' + str(self.account.balance))
+        print(transferee.name, 'Balance: $' + str(transferee.account.balance))
+
+
+class BankAccount:
+    bankName = 'First National Dojo'
+    allAccounts = []
+    def __init__(self, intRate, balance):
+        self.intRate = intRate
+        self.balance = balance
+        BankAccount.allAccounts.append(self)
+
+    def deposit(self, amount):
+        self.balance += amount
+        return self
+
+    def withdrawal(self, amount):
+        self.balance -= amount
+        return self
+
+    def yieldInterest(self):
+        self.balance += (self.balance * self.intRate)
+        return self
+    
+    def displayAccountInfo(self):
+        print('Balance: $' + str(self.balance))
+
 
 guido = User('Guido van Rossum', 'guido@python.org')
 monty = User('Monty Python', 'monty@python.org')
 phoenix = User('Andrew DeWitt', 'DeWitt@protonmail.ch')
 
-
-guido.deposit(1352).deposit(436).deposit(777).withdrawal(647).displayBalance()
-
-monty.deposit(348).deposit(24005).withdrawal(3349).withdrawal(20000).displayBalance()
-
-phoenix.deposit(3984).withdrawal(124).withdrawal(248).withdrawal(496).displayBalance()
-
-print()
-guido.fundTransfer(phoenix, 300)
-
-
+phoenix.makeDeposit(23543)
+phoenix.fundTransfer(guido, 3500)
