@@ -1,6 +1,5 @@
 class BankAccount:
     bankName = 'First National Dojo'
-    allAccounts = []
     def __init__(self, intRate, balance):
         self.intRate = intRate
         self.balance = balance
@@ -20,6 +19,7 @@ class BankAccount:
     
     def displayAccountInfo(self):
         print('Balance: $' + str(self.balance))
+        return self
 
 class SavingsAccount(BankAccount):
     def __init__(self):
