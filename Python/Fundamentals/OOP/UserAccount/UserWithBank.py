@@ -1,11 +1,10 @@
-import DeWitt_Andrew_vs_BankAccount
-
+from BankAccount import BankAccount
 class User:
     bankName = "First National Dojo"
     def __init__(self, name, email):
         self.name = name
         self.email = email
-        self.account = BankAccount(0.015, 0)
+        self.account = BankAccount(.015, 0)
 
     def makeDeposit(self, amount):
         self.account.deposit(amount)
