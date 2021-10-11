@@ -7,18 +7,20 @@ class Ninja:
         self.petFood = petFood
         self.pet = PetMod.Pet('Benyamin', 'cat', 'hunt')
     
-    def walk():
+    def walk(self):
         self.pet.play()
         print(f'{self.pet.name} has {self.pet.health} health.')
 
-    def feed():
+    def feed(self):
         self.pet.eat()
         print(f'{self.pet.name} has {self.pet.health} health and {self.pet.energy} energy.')
     
-    def bathe():
+    def bathe(self):
         self.pet.noise()
 
 
 Phoenix = Ninja('Andrew', 'DeWitt', 'mouse', 'steak')
 
+Phoenix.feed()
+Phoenix.walk()
 Phoenix.bathe()

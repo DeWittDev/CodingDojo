@@ -13,8 +13,6 @@ class Pet:
     def eat(self):
         self.health += 10
         self.energy += 5
-        print(self.health)
-        print(self.energy)
         return self
     
     def play(self):
@@ -26,15 +24,3 @@ class Pet:
             print('Arf!')
         elif self.ptype == 'cat':
             print('Meow!')
-
-class Cat(Pet):
-    def __init__(self, name, tricks):
-        super().__init__(name, tricks, health, energy)
-
-class Dog(Pet):
-    def __init__():
-        super().__init__(name, tricks, health, energy)
-
-class Bird(Pet):
-    def __init__():
-
